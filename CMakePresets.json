@@ -12,5 +12,11 @@
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         }
+    ],
+    "buildPresets": [
+        {
+            "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "configurePreset": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+        }
     ]
 }
