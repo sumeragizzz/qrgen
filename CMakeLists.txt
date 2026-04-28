@@ -10,6 +10,9 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(cli11)
 
+find_package(OpenCV REQUIRED)
+
 add_executable(qrgen main.cpp)
 
-target_link_libraries(qrgen PRIVATE CLI11::CLI11)
+target_include_directories(qrgen PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(qrgen PRIVATE CLI11::CLI11 ${OpenCV_LIBS})
