@@ -1,22 +1,22 @@
 {
-    "version": 8,
-    "configurePresets": [
-        {
-            "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-            "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-            "description": "MinGW Makefiles preset for GCC on x86_64-w64-mingw32",
-            "generator": "MinGW Makefiles",
-            "binaryDir": "${sourceDir}/out/build/${presetName}",
-            "cacheVariables": {
-                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
-                "CMAKE_BUILD_TYPE": "Debug"
-            }
-        }
-    ],
-    "buildPresets": [
-        {
-            "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-            "configurePreset": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
-        }
-    ]
+  "version": 8,
+  "configurePresets": [
+    {
+      "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+      "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+      "description": "MinGW Makefiles preset for GCC on x86_64-w64-mingw32",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+      "configurePreset": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+    }
+  ]
 }
